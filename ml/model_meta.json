@@ -1,0 +1,49 @@
+{
+  "data_source": "real data",
+  "best_model": "Linear Regression",
+  "features": [
+    "cycle_number",
+    "avg_voltage",
+    "avg_current",
+    "avg_temperature",
+    "discharge_time"
+  ],
+  "reference_capacity_ah": 1.9,
+  "batteries": [
+    "B0005",
+    "B0006",
+    "B0007",
+    "B0018"
+  ],
+  "n_rows": 636,
+  "results": [
+    {
+      "model": "Baseline (always predict the average)",
+      "MAE_Ah": 0.1736,
+      "MAE_SOH_points": 9.14,
+      "R2": -0.0315,
+      "worst_battery_MAE_Ah": 0.227
+    },
+    {
+      "model": "Linear Regression",
+      "MAE_Ah": 0.0139,
+      "MAE_SOH_points": 0.73,
+      "R2": 0.9927,
+      "worst_battery_MAE_Ah": 0.022
+    },
+    {
+      "model": "Random Forest",
+      "MAE_Ah": 0.0378,
+      "MAE_SOH_points": 1.99,
+      "R2": 0.9421,
+      "worst_battery_MAE_Ah": 0.0453
+    },
+    {
+      "model": "Gradient Boosting",
+      "MAE_Ah": 0.0288,
+      "MAE_SOH_points": 1.52,
+      "R2": 0.963,
+      "worst_battery_MAE_Ah": 0.0382
+    }
+  ]
+}
