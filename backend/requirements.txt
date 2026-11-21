@@ -1,0 +1,5 @@
+flask>=3.0
+
+# The real ML model (Person A's /ml folder) also needs its own packages,
+# for example: scikit-learn, pandas, numpy, joblib.
+# Install the SAME scikit-learn version Person A trained with, or loading model.pkl may fail.
